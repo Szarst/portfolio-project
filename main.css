@@ -1,1 +1,40 @@
-.header
+body {
+	font-family: Roboto, san-serifs;
+	line-height: 1.5em;
+	font-size: 12px;
+}
+
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: Roboto, san-serifs;
+	line-height: 1.5em;
+	font-size: 12px;
+}
+
+@media screen and (max-width: 500px) {
+
+.udacityLogo {
+	width: 20%;
+	height: auto;
+	order: 1;
+	}
+
+.name {
+	width: 70%;
+	height: auto;
+	order: 2;
+	text-align: right;
+	}
+}
+
+table {
+	width: 100%;
+	font-size: 14px;
+	text-align: center;
+	opacity: 40%;
+}
+
+a {
+	text-decoration: none;
+}
