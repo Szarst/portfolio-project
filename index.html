@@ -1,33 +1,59 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio Site</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="main.css">
-  </head>
-	  
-  <body>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Portfolio Site</title>
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
   <header class="header">
-	<div class="udacityLogo">
-		<img src="img/udacity-logo-s.png" alt="Udacity logo">
-	</div>
-	<div class="name">
+	<table>
+		<tr>
+		<td><img class="udacityLogo" src="img/udacity-logo.png" alt="Udacity logo"></td>
+		<td class="name">
 		<h1>Olga Lubieniecka</h1>
 		<h2>Front-end lerner</h2>
-	</div>
+	</td>
+	</tr>
+	</table>
   </header>
 		<hr>
   <nav class="nav">
 		<table>
 		<tr>
-		<td><a href="#" class="menuWork">Work</a></td>
-        <td><a href="#" class="menuGallery">Gallery</a></td>
-        <td><a href="#" class="menuAbout">About</a></td>
+		<td><a href="#work" class="menuWork">Work</a></td>
+        <td><a href="#gallery" class="menuGallery">Gallery</a></td>
+        <td><a href="#about" class="menuAbout">About</a></td>
 		</tr>
 		</table>
 		</nav>
+		<hr>
+		
+	<div class="work"> 
+	<a name="work"></a>
+	<h3>Work</h3>
+	<p><span class="strong">Marketing & PR specialist working in insurance company.</span><br>
+	<span>I'm creating layouts for client's documentation, product's booklets, information posters ect.</span><br>
+	<span>In free time I'm making leaflets for my family and friends and this works I can share with you in Gallery section.</p>
+	</div>
+	
+	<div class="gallery">
+	<a name="gallery"></a>
+	<h3>Gallery</h3>
+	<img class="ariadna" src="img/ariadna.jpg" alt="psychologist leaflet">
+	<img class="iuspol" src="img/iuspol.jpg" alt="lawyer leaflet">
+	<img class="offer" src="img/offer.jpg" alt="insurance offer">
+	<img class="wyjazd" src="img/wyjazd.png" alt="communication material">
+	</div>
+	
+	<div class="about">
+	<a name="about"></a>
+	<h3>About</h3>
+	<p><span>I'm living in Warsaw, Poland.</span>
+	<span>Besides work, I'm also enjoying myself in free time while watching anime and reading manga.</span>
+	</p>
   </body>
 </html>
