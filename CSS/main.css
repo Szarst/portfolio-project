@@ -1,129 +1,84 @@
-.header {
-	display: flex;
-	flex-wrap: wrap;
-	font-family: Roboto, san-serifs;
-	line-height: 1.5em;
-	font-size: 12px;
+body {
+  color: #313033;
+  background-color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
-
-body {
-	font-family: Roboto, san-serifs;
-	line-height: 1.5em;
-	font-size: 13px;
-	}
-
-.udacityLogo {
-	width: 60%;
-	height: auto;
-	}
-
-.name {
-	width: 70%;
-	height: auto;
-	text-align: right;
-	}
-
-table {
-	width: 100%;
-	font-size: 14px;
-	text-align: center;
-	opacity: 40%;
-	}
-
-a {
-	text-decoration: none;
-	}
-
-.strong {
-	font-weight: 500;
-	}
-
-.ariadna, .iuspol, .wyjazd, .offer {
-	width: 40%;
-	height: auto;
-	margin-left: 8px;
-	}	
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 25%);
+  grid-gap: 10px;
+  max-width: 1024px;
+  margin: 0 10%;
 }
 
-@media screen and (min-width: 601px) and (max-width: 800px) {
-
-body {
-	font-family: Roboto, san-serifs;
-	line-height: 1.5em;
-	font-size: 13px;
-	}
-
-.udacityLogo {
-	width: 40%;
-	height: auto;
-	}
-
-.name {
-	width: 70%;
-	height: auto;
-	text-align: right;
-	}
-
-table {
-	width: 100%;
-	font-size: 14px;
-	text-align: center;
-	opacity: 40%;
-	}
-
-a {
-	text-decoration: none;
-	}
-
-.strong {
-	font-weight: 500;
-	}
-
-.ariadna, .iuspol, .wyjazd, .offer {
-	width: 40%;
-	height: auto;
-	margin-left: 8px;
-	}	
+img {
+  max-width: 100%;
 }
 
-@media screen and (min-width: 801px) {
+h1,
+h2 {
+  display: flex;
+  justify-content: flex-end;
+}
 
-body {
-	font-family: Roboto, san-serifs;
-	line-height: 1.5em;
-	font-size: 14px;
+article {
+	grid-column: 1 / span 4;
+	justify-content: flex-end;
+}
+
+.logo {
+  grid-column: 1 / 2;
+  display: flex;
+  width: 70%;
+  align-items: center;
+}
+
+header {
+  grid-column: 2 / 5;
+}
+
+.hr {
+  grid-column: 1 / -1;
+}
+
+.pictureView {
+  border-radius: 10px;
+}
+
+.gallery {
+  grid-column: 1 / -1;
+}
+
+
+@media only screen and (max-width: 499px) {
+  h1,
+  h2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1em;
+  }
+  
+  .logo {
+	  width:80%;
+	  align-items: center;
+  }
+ }
+ 
+@media only screen and (min-width: 500) and (max-width: 799px) {
+	article, 
+	h4 {
+	grid-column: 1 / span 4;
+	justify-content: flex-end;
+	font-size: 1.5em;
 	}
-
-.udacityLogo {
-	width: 30%;
-	height: auto;
+	
+	.myWorks {
+	font-size: 1.5em;
 	}
-
-.name {
-	width: 70%;
-	height: auto;
-	text-align: right;
-	}
-
-table {
-	width: 100%;
-	font-size: 16px;
-	text-align: left;
-	}
-
-a {
-	text-decoration: none;
-	}
-
-.strong {
-	font-weight: 500;
-	}
-
-.ariadna, .iuspol, .wyjazd, .offer {
-	width: 30%;
-	height: auto;
-	margin-left: 8px;
-	}	
 }
