@@ -5,55 +5,51 @@
    <meta name="viewport" content="width=device-width,initial-scale=1">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <title>Portfolio Site</title>
-   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
-   <link rel="stylesheet" type="text/css" href="main.css">
+   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" type="text/css" href="gridstyle.css">
 </head>
 <body>
-  <header class="header">
-	<table>
-		<tr>
-		<td><img class="udacityLogo" src="img/udacity-logo.png" alt="Udacity logo"></td>
-		<td class="name">
-		<h1>Olga Lubieniecka</h1>
-		<h2>Front-end lerner</h2>
-	</td>
-	</tr>
-	</table>
-  </header>
-		<hr>
-  <nav class="nav">
-		<table>
-		<tr>
-		<td><a href="#work" class="menuWork">Work</a></td>
-        <td><a href="#gallery" class="menuGallery">Gallery</a></td>
-        <td><a href="#about" class="menuAbout">About</a></td>
-		</tr>
-		</table>
-		</nav>
-		<hr>
-		
-	<div class="work"> 
-	<a name="work"></a>
-	<h3>Work</h3>
-	<p><span class="strong">Marketing & PR specialist working in insurance company.</span><br>
-	<span>I'm creating layouts for client's documentation, product's booklets, information posters ect.</span><br>
-	<span>In free time I'm making leaflets for my family and friends and this works I can share with you in Gallery section.</p>
-	</div>
-	
-	<div class="gallery">
-	<a name="gallery"></a>
-	<h3>Gallery</h3>
-	<img class="ariadna" src="img/ariadna.jpg" alt="psychologist leaflet">
-	<img class="iuspol" src="img/iuspol.jpg" alt="lawyer leaflet">
-	<img class="offer" src="img/offer.jpg" alt="insurance offer">
-	<img class="wyjazd" src="img/wyjazd.png" alt="communication material">
-	</div>
-	
-	<div class="about">
-	<a name="about"></a>
-	<h3>About</h3>
-	<p><span>I'm living in Warsaw, Poland.</span>
-	<span>Besides work, I'm also enjoying myself in free time while watching anime and reading manga.</span>
-	</p>
-  </body>
+  <div class="container">
+	<div class="logo">
+	  <img class="logo" src="udacity-logo-m.png" alt="Udacity logo">
+    </div>
+        <header class="name">
+          <h1>Olga Lubieniecka</h1>
+          <h2>Front-end Dev-to-be</h2>
+        </header>
+        <div class="hr"><hr></div>
+        
+  <article>
+	<p><span><strong>I'm working as marketing & PR specialist at insurance company.</strong></span><br> 
+	<span>I'm creating layouts for client's documentation, product's booklets, information posters ect.</span>
+	<span>But I'm also interested in web design with strong orientation on UX/UI. </span>
+	<span>So I've taken an opportunity and joined the scholarship from Google for Udacity's Nanodegree "Front-End Web Developer".</p>
+  </article>
+  
+  <div class="gallery">
+    <h4>My works:</h4>
+	<span class="myWorks">Click on the image and it will open in a new tab.</span>
+  </div>
+  <div class="myWorks">
+    <a href="https://raw.githubusercontent.com/Szarst/portfolio-project/master/img/iuspol.jpg" target="_blank">
+	<img class="pictureView" src="https://raw.githubusercontent.com/Szarst/portfolio-project/master/img/iuspol.jpg" alt="lawyer leaflet">
+    </a>
+  </div>
+  <div class="myWorks">
+    <a href="https://raw.githubusercontent.com/Szarst/portfolio-project/master/img/ariadna.jpg" target="_blank">
+	<img class="pictureView" src="https://raw.githubusercontent.com/Szarst/portfolio-project/master/img/ariadna.jpg" alt="psychologist leaflet">
+    </a>
+  </div>
+  <div class="myWorks">
+    <a href="https://raw.githubusercontent.com/Szarst/portfolio-project/master/img/offer.jpg" target="_blank">
+	<img class="pictureView" src="https://raw.githubusercontent.com/Szarst/portfolio-project/master/img/offer.jpg" alt="preview_random_quote_machine_project">
+    </a>
+  </div>
+  <div class="myWorks">
+    <a href="https://raw.githubusercontent.com/Szarst/portfolio-project/master/img/wyjazd.png" target="_blank">
+	<img class="pictureView" src="https://raw.githubusercontent.com/Szarst/portfolio-project/master/img/wyjazd.png" alt="preview_random_quote_machine_project">
+    </a>
+  </div>
+  </div>
+</body>
 </html>
